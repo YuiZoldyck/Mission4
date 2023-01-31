@@ -1,0 +1,29 @@
+﻿/*overwrite the original body styles*/
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 2% 3% 4% 2%;
+}
+
+/*change the size of my image*/
+img {
+    max-height: 400px;
+
+}
+
+/*add in margins for my labels*/
+label {
+    width: 40%;
+    margin: 0.2% 0;
+    display: inline-block;
+}
+
+/*make sure spacing looks consistent for my forms*/
+#btnCalc {
+    margin-top: 1.5%;
+}
+
+/*space out the where the return is*/
+#letter {
+    float: right;
+    margin-right: 60%;
+}
