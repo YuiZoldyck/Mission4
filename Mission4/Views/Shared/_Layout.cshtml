@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <!--Title on page with my name-->
+    <title>@ViewData["Title"]</title>
+    <!--line of code that adds a smiley face to my tab-->
+    <link rel="icon" type="image/png" href="https://img.lovepik.com/original_origin_pic/18/04/20/bffb5bd710e7d3d46d4837d94a0f8bb3.png_wh300.png" />
+    <!--booststrap styling-->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!--styling changes I overwrite using my stylessheet-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="GradeCalc">Grade Calculator</a>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
