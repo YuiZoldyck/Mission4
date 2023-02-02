@@ -9,11 +9,17 @@
     <!--line of code that adds a smiley face to my tab-->
     <link rel="icon" type="image/png" href="https://img.lovepik.com/original_origin_pic/18/04/20/bffb5bd710e7d3d46d4837d94a0f8bb3.png_wh300.png" />
     <!--booststrap styling-->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!--styling changes I overwrite using my stylessheet-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="~/css/styles.css" rel="stylesheet" />
+    @*insert script here so that jquery will load before the gradeCalc.js*@
+    <script language="JavaScript" type="text/javascript" src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+
 </head>
 <body>
+
+    @*nav bar*@
     <nav>
         <a asp-controller="Home" asp-action="Index">Home</a>
         <a asp-controller="Home" asp-action="GradeCalc">Grade Calculator</a>
@@ -22,8 +28,5 @@
         @RenderBody()
     </div>
 
-
-    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>

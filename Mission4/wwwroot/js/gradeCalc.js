@@ -60,5 +60,7 @@ $("#btnCalc").click(function () {
     }
 
     //replaces input in input box with id letter with the gradeletter
-    $("#letter").val(gradeLetter);
+    $("#letter") = (gradeLetter);
+
+    e.preventDefault();
 })

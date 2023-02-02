@@ -5,24 +5,29 @@
     ViewData["Title"] = "Grade Calculator";
 }
 
+@model GradeCalcModel
 <!--the grade calculator-->
 <h2>Grade Calculator</h2>
-<form>
+@*make sure that page doesn't reload on click*@
+<form method="post" onsubmit="return false">
     <!--<label>Percentage score</label><br />-->
     <label>Assignments</label><br />
-    <input id="assignments" label="Assignments" /><br />
+    <input id="assignments" asp-for="Assignment" /><br />
     <label>Group Project</label><br />
-    <input id="groupProject" label="Group Project" /><br />
+    <input id="groupProject" asp-for="GroupProject" /><br />
     <label>Quizzes</label><br />
-    <input id="quizzes" label="Quizzes" /><br />
+    <input id="quizzes" asp-for="Quizzes" /><br />
     <label>Midterm Exam</label><br />
-    <input id="midterm" label="Midterm" /><br />
+    <input id="midterm" asp-for="Midterm" /><br />
     <label>Final Exam</label><br />
-    <input id="final" label="Final" /><br />
+    <input id="final" asp-for="Finals" /><br />
     <label>INTEX</label><br />
-    <input id="intex" label="Intex" /><br />
-    <input id="btnCalc" type="button" value="Calculate Score" />
+    <input id="intex" asp-for="Intex" /><br />
+    <input id="btnCalc" type="submit" value="Calculate Score" />
     <input id="letter" label="Final Letter Grade" />
 </form>
 
-<script src="js/gradeCalc.js"></script>
+@*tells what is wrong with validation*@
+<div asp-validation-summary="All"></div>
+<script language="JavaScript" type="text/javascript" src="~/js/gradeCalc.js"></script>
+

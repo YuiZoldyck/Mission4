@@ -22,11 +22,13 @@ namespace Mission4
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //reconfigure my settings so it loads the mvc contents
             if (env.IsEnvironment("Development"))
             {
                 app.UseDeveloperExceptionPage();
             }
-            
+
+            //keep the use of my css/js/imgs in my wwwroot
             app.UseStaticFiles();
             app.UseRouting();
 

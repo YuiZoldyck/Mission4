@@ -23,11 +23,13 @@
     <Folder Include="Controllers\" />
     <Folder Include="Views\Home\" />
     <Folder Include="Views\Shared\" />
+    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\" />
     <None Remove="Controllers\" />
     <None Remove="Views\Stuff\" />
     <None Remove="Views\Shared\" />
+    <None Remove="Models\" />
   </ItemGroup>
 </Project>
